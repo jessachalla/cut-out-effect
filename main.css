@@ -1,15 +1,15 @@
 body {
     font-family: 'Righteous', cursive;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 1.25;
     background-color: white;
-    color:black;
+    color: black;
     margin: 0 auto;
 }
 
 .text {
-    border: 120px solid black;
-    padding: 60px;
+    border: 100px solid black;
+    padding: 40px;
     background-color: white;
     position: relative;
 }
@@ -17,16 +17,37 @@ body {
 h1 {
     font-size: 60px;
     margin: 0;
-} 
+}
 
 .background {
+    /* margin-top: -1800px; */
+    min-height: 100%;
+    min-width: 1024px;
+
+    width: 100%;
+    height: auto;
+
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 1200px;
-    height: 800px;
+
+
     background-size: cover;
     background-position: center;
     mix-blend-mode: screen;
     pointer-events: none;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+
+    .text {
+        border: 50px solid black;
+    }
+
+    h1 {
+        font-size: 30px;    
+    }
+  }
